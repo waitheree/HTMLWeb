@@ -1,0 +1,406 @@
+<p>&lt;!doctype html&gt;</p>
+<div>
+<h1>Welcome to the World Wide Web</h1>
+</div>
+<div>
+<p>The World Wide Web (W3) is a way to get infinite universal knowledge.&nbsp;</p>
+</div>
+<div>
+<p>All web pages are coded in languages. Coding languages are not like normal languages. It instead tells the computer how to visually interpret the information from the server, and make it into a visual web page.&nbsp;</p>
+</div>
+<div>
+<p><strong>How to Help?</strong></p>
+</div>
+<div>
+<p>You can put up data. There are many ways of doing this. The web needs both raw data -- fresh hypertext or old plain text files, or smart servers giving views of existing databases.</p>
+<p>There are many ways of making your new or existing data available on the web.</p>
+<h2>You have plain text files</h2>
+<p>If you have some plain text files then you can easily write, or generate using a script, a small hypertext file that points to them. To make them accessible you can use either&nbsp;<a href="http://info.cern.ch/hypertext/WWW/Provider/AnonymousFTP.html" name="2">anonymous FTP</a>&nbsp;or the&nbsp;<a href="http://info.cern.ch/hypertext/WWW/Daemon/User/Guide.html">HTTP daemon</a>.</p>
+<h2>You have many files</h2>
+<p>In this case, for speed of access, the&nbsp;<a href="http://info.cern.ch/hypertext/WWW/Daemon/User/Guide.html" name="4">HTTP daemon</a>&nbsp;will probably be best. You can write a tree of hypertext in&nbsp;<a href="http://info.cern.ch/hypertext/WWW/MarkUp/MarkUp.html" name="7">HTML</a>&nbsp;linking the text files, or you can even generate the tree automatically from your directory tree. If you want to generate a full-text index, then you could use the public domain&nbsp;<a href="http://info.cern.ch/hypertext/Products/WAIS/Overview.html" name="5">WAIS</a>&nbsp;software - your data will then be accessible (as plain text, not hypertext) through the&nbsp;<a href="http://info.cern.ch/hypertext/WWW/Daemon/WAISGate.html" name="9">WAIS gateway</a>.</p>
+<h2>You have an existing information base</h2>
+<p>If you have a maintained base of information, don't rush into changing the way you manage it. A "gateway" W3 server can run on top of your existing system, making the information available to the world.</p>
+</div>
+<div>
+<p>Maybe you know a system which it would be neat to have on the web. How about suggesting to the person involved that they put up a W3 server?</p>
+<p>HTML is the most basic web coding language.</p>
+<p>Below is a guide on how to make a web page using it.</p>
+<p><strong>What is HTML?</strong></p>
+<p>Hypertext Markup Language is the standard language that websites designed to be displayed in a web browser use.</p>
+<p>It describes the structure of a webpage and tells the browser how to interpret it.</p>
+<p>"Hypertext" means the <strong>hyperlinks</strong> that an HTML page may contain. "Markup language" refers to the way tags are used to define the page layout and <strong>elements</strong> within the page. Below is an example of HTML code used to define a basic webpage with a title, a header, and a single paragraph of text.</p>
+<p>Example:</p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;title&gt;Page Title&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;My First Heading&lt;/h1&gt;</p>
+<p>&lt;p&gt;My first paragraph.&lt;/p&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>Many people still write HTML by hand using tools such as NotePad on Windows, or TextEdit on the Mac. This guide will get you up and running. Even if you don't intend to edit HTML directly and instead plan to use an HTML editor such as Netscape Composer, or W3C's Amaya, this guide will enable you to understand enough to make better use of such tools and how to make your HTML documents accessible on a wide range of browsers. Once you are comfortable with the basics of authoring HTML, you may want to learn how to <a href="https://www.w3.org/MarkUp/Guide/Style.html">add a touch of style</a> using CSS</p>
+<p><strong>The history of HTML</strong></p>
+<p>HTML was originally developed by Tim Berners-Lee while at CERN, and popularized by the Mosaic browser developed at NCSA. During the course of the 1990s it has blossomed with the explosive growth of the Web.</p>
+<p><strong>Lesson 1: The Basics</strong></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>All commands are typed within triangular brackets <strong>&lt; &gt;</strong>. These brackets are called tags. When you type something between these tags, it means you want to start a command. When you want to end a command you need to end the tags. To end a tag you type &lt;/command&gt;. That is, you add a / after the first &lt;.</p>
+<br />
+<p>&lt;b&gt;a word&lt;/b&gt; would make <strong>a word</strong> display in bold on your page. Since the tags are ended, everything after 'a word' would not be in bold.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Once you understand that every command needs to be inside &lt; these tags &gt;, you will be well on your way to mastering web pages.</p>
+<p><strong>Lesson 2: Text</strong></p>
+<p>The majority of webpages are made up of text. If you have ever used a keyboard, you already know how to type text in HTML. To type something into your webpage, simply type what you want to appear on your page. You only need to use tags if you want the text to do something special.</p>
+<p>There are some ways that you can change your text.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>&lt;b&gt;</p>
+</td>
+<td>
+<p><strong>This bolds text</strong></p>
+</td>
+<td>
+<p>&lt;/b&gt;</p>
+</td>
+<td>
+<p>(You need to end this.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;br&gt;</p>
+</td>
+<td>
+<p>Inserts a line break</p>
+</td>
+<td>
+<p>(like pressing - on a keyboard)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;p&gt;</p>
+</td>
+<td>
+<p>This starts a new paragraph</p>
+</td>
+<td>
+<p>This is very useful for splitting up your text</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;i&gt;</p>
+</td>
+<td>
+<p><em>This makes text in italics</em></p>
+</td>
+<td>
+<p>&lt;/i&gt;</p>
+</td>
+<td>
+<p>(You need to end this.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;u&gt;</p>
+</td>
+<td>
+<p>This underlines text</p>
+</td>
+<td>
+<p>&lt;/u&gt;</p>
+</td>
+<td>
+<p>(You need to end this.)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>You can also change the font size.</p>
+<p>In HTML the sizes range from 1 (very small) to 7 (very big). To change the size of your font, you need to type:</p>
+<p>&lt;font size="1"&gt;type your text here&lt;/font&gt;</p>
+<p>You must end your font tag, or all text typed afterward will be that size.</p>
+<p>These are the different font sizes that you can use:</p>
+<ul>
+<li>Size 1 text</li>
+<li>Size 2 text</li>
+<li>Size 3 text</li>
+<li>Size 4 text</li>
+<li>Size 5 text</li>
+<li>Size 6 text</li>
+<li>Size 7 text</li>
+</ul>
+<p><strong>Lesson 3: Advanced Text</strong></p>
+<p>Once you are comfortable with using simple tags, such as bold and underline, you can move on to other things that will make your text more interesting. Here you will learn how to add bullet points, make numbered lists, and insert a horizontal line.</p>
+<p><strong>Bullet Points:</strong></p>
+<p>Bullet points are slightly more complicated. In HTML, bullet points are called 'unordered lists,' or 'ul,' for short. To start bullet points, you need to type &lt;ul&gt;.</p>
+<p>If you want each bullet point to appear on a new line, you should type &lt;li&gt; before each one.</p>
+<p>When you have finished all your bullet points, type &lt;/ul&gt;</p>
+<p><br /><br /></p>
+<p>The code should look like this:</p>
+<p>&lt;ul&gt;</p>
+<p>&lt;li&gt;bullet one</p>
+<p>&lt;li&gt;bullet two</p>
+<p>&lt;li&gt;bullet three</p>
+<p>&lt;/ul&gt;</p>
+<p>This is what would actually be displayed on your webpage:</p>
+<ul>
+<li>bullet one</li>
+<li>bullet two</li>
+<li>bullet three</li>
+</ul>
+<p><strong>Numbered Lists:</strong></p>
+<p>Creating a numbered list uses the same principle as creating bullet points, except that you use 'ordered list', or '&lt;ol&gt;' instead of &lt;ul&gt;. The code for an ordered list would look like this:</p>
+<p>&lt;ol&gt;</p>
+<p>&lt;li&gt;point one</p>
+<p>&lt;li&gt;point two</p>
+<p>&lt;li&gt;point three</p>
+<p>&lt;/ol&gt;</p>
+<p>This is what would actually be displayed on your webpage:</p>
+<ol>
+<li>point one</li>
+<li>point two</li>
+<li>point three</li>
+</ol>
+<p>&nbsp;<strong>Lesson 4: Colours</strong></p>
+<p>I don't think you want your page to be Sad, monochromatic black and white with some greys in there. This lesson goes over how to make it have colours.</p>
+<p><strong>Font Colour</strong></p>
+<p>You can change the colour of your font very easily. For the most frequently used colours, you can use the name of the colour, e.g red, black, green, blue, gray, white. HTML uses American English spellings, so if you want to change the colour of something, you need to type "color." If you want to colour something grey, you need to type "grey." If you want to make a word red, you would type: &lt;font color="red"&gt; text here &lt;/font&gt;, which would appear as text here.</p>
+<p>For more specific colours, you may need to use a hexadecimal code. This is the unique code given to each shade of colour. All colours have a combination of 6 numbers and letters that represents an exact shade.</p>
+<p>To use the hexadecimal code, simply type: &lt;font color="FF66FF"&gt;text here&lt;/font&gt; This would make the text pink, like so text here.</p>
+<p>If you want to change the font colour and size, you can do this in the same tag eg:</p>
+<p>&lt;font size="1" color="red"&gt;type text here&lt;/font&gt;</p>
+<p>This would make the text small and red, like this: type text here.</p>
+<p><strong>Background Colour</strong></p>
+<p>If you want to make your page more interesting, you can change the background of the page. Background colour works in much the same way as font colour, except it affects the whole page. Normally, backgrounds are white (FFFFFF) or black (000000), but you can use any colour you wish. To change your background colour, simply type this near the top of your page:</p>
+<p>&lt;body bgcolor="#FFFFFF"&gt; or &lt;body bgcolor="white"&gt;</p>
+<p>You do not need to end this tag, since it affects the whole page. It is good practice to put &lt;/body&gt; at the bottom of your page to keep things tidy, though.</p>
+<p><strong>Lesson 5: Adding Pictures</strong></p>
+<p>Pictures can brighten up a webpage and they are a great way to show others your work. If you have created a picture that you want to use on your site you need to save it somewhere on the Web. Once you know where your image is stored, it is very easy to add an image to your website. You can use any images already on the Neopets site or an image that is somewhere else on the Web.</p>
+<p>Once you know where your images are saved, you are ready to write the code. The code to insert a picture is made up of three things:</p>
+<ol>
+<li>&lt;img src = " <em>(This command tells the computer to look for an image.)</em></li>
+<li>&ldquo;The Link&rdquo; <em>(This tells the computer where to find your picture.)</em></li>
+<li>"&gt; <em>closes the tag</em></li>
+</ol>
+<p>When you put the code together it looks like this:</p>
+<p><strong>&lt;img src="Link"&gt;</strong></p>
+<p>The image tag is special because you don't have to end it. Now, when you look at your webpage, you should see your picture.</p>
+<p>There are several other things you can add to the code to make the image look better, including the border tag. Using this tag, you can choose what thickness of border (if any) you would like around your image. Some basic borders are:</p>
+<ul>
+<li>Border="0" no border</li>
+<li>Border="1" thin border</li>
+<li>Border="2" thicker border</li>
+</ul>
+<p>You simply type in border="2" inside the tag after you have typed the location of your image, like so:</p>
+<p>&lt;img src="Link" border="2"&gt;</p>
+<p>Your picture will now be displayed with a thick border around it.</p>
+<p>For details on how to arrange your image on your page and how to add background images, go to the next lesson...</p>
+<p><strong>Positioning the image:</strong></p>
+<p>You can also change where you want your image to be positioned on the page. The most frequently used positions for images are left, right, and center. To make an image centered, type this before the image tag:</p>
+<p><strong>&lt;div align="center"&gt;</strong></p>
+<p>Everything typed after this will be centered, so now you need to type your image tags. When you have finished your image tag and no longer want everything centered, you simply end the center tag, like so:</p>
+<p><strong>&lt;/div&gt;</strong></p>
+<p>To make something aligned to the left or right, you use the same code, but you would replace the word "center" with "left" or "right."</p>
+<p><strong>Background Images:</strong></p>
+<p>You can also make an image display as a background image instead of just having a solid color. This works well with simple, light-colored images. It livens up the page, yet you can still read the text clearly. To display an image as the background, you need to type:</p>
+<p><strong>&lt;body background="Link&gt;</strong></p>
+<p>This will now display your image in the background.</p>
+<p><strong>Lesson 6: Making Links</strong></p>
+<p>You can turn anything on your site into a link to something else. If your favorite website is Yahoo, you can make a text or image link to the Yahoo page. You already know how to insert images or text into your web page, so turning those into links is very simple. First, you need to have a URL to link to. In this example, I have used the Yahoo URL. I wanted to make the text <em>click here</em> link to <strong>www.yahoo.com</strong> so I typed:</p>
+<p>&lt;a href="<em>url</em>"&gt;<em>link text</em>&lt;/a&gt;</p>
+<p>&lt;a&gt; means a hyperlink</p>
+<p>The only thing that will be displayed on the web page is the text <em>click here</em>, which will now be clickable. When you click on it with your mouse, it will take you to the URL. You can make the text a different size, different colour, bold, italic, or whatever you'd like, but you must start and finish the tags either side of the text.</p>
+<p>To make an image clickable, you use the same idea, but instead of typing the text, you put the image tag. For example:</p>
+<p><strong>&lt;a href="Link"&gt;</strong></p>
+<p><strong>&lt;img src="Link"&gt;&lt;/a&gt;</strong></p>
+<p>This will automatically put a thin border around your image. To make this border thicker (or to remove it completely), you need to use the border tag <strong>(see lesson 5: adding pictures)</strong>. Using this tag, you can choose what size of the border of any you want to have around your image.</p>
+<p>Some basic borders are:</p>
+<ul>
+<li>Border="0" no border</li>
+<li>Border="1" thin border</li>
+<li>Border="2" thicker border</li>
+</ul>
+<p>If you don't want to have a border around your picture, you simply type <strong>border="0"</strong> inside the tag after you have typed the location of your image, like so:</p>
+<p><strong>&lt;img src="Link" border="0"&gt;</strong></p>
+<p><strong>Lesson 7: Adding Tables</strong></p>
+<p>To create a table, you need to start and end it. To start a table, you have to type <em>&lt;table&gt;</em> and to end the table, type <em>&lt;/table&gt;</em>.</p>
+<p>What goes between the start and end tags depends on what type of table you want. Every table has at least one row. A table row is one horizontal row made up of x number of table data cells.</p>
+<p>It is completely up to you what you put into each cell. You can enter text, images, links...anything you'd like. If you want to create a table with two columns and one row, you need to type:</p>
+<p>&lt;table&gt;</p>
+<p>&lt;tr&gt; - start table row</p>
+<p>&lt;td&gt; - start table data cell</p>
+<p>type your text or image tags here</p>
+<p>&lt;/td&gt;</p>
+<p>&lt;td&gt; - start the second table data cell</p>
+<p>type your text or image here</p>
+<p>&lt;/td&gt;</p>
+<p>&lt;/tr&gt;</p>
+<p>&lt;/table&gt;</p>
+<p>It will now look like this:</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>This is the first data cell...</p>
+</td>
+<td>
+<p>...and this is the second. Woo hoo I have created my first table!</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>You can have any number of table rows and data cells, as long as you remember to end each tag. The main thing to remember is to start with a &lt;tr&gt;. Adding extra &lt;tr&gt;'s will add extra rows, and adding extra &lt;td&gt;'s will create an extra cell. If you want to add an extra cell or row, make sure you end the one before it before starting a new one.</p>
+<p><strong>Changing the look of your table</strong></p>
+<p>You can change the appearance of your table by making each cell a different colour or changing the border size and colour.</p>
+<p>If you just type &lt;table&gt;, then by default the table will have no border. If you want to make your table stand out you can add a border by typing &lt;table border="1"&gt;. This will make a thin border appear around your table, as you can see below:</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>the border size 1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>To change the colour of the border, you use a similar code to changing the background colour. Simply type &lt;table border="1" bordercolor="red"&gt; to make a table with a thin red border. You can either use hexadecimal codes or type in the names of common colours. It will look something like this:</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>the border colour is red</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Changing the colour of the table</strong></p>
+<p>Changing the colour of the table is very simple. When you start a table, you just need to say what colour you want the table to be. In this case, I want a light blue (CCCCFF)table, so I type &lt;table border="1" bgcolor="CCCCFF"&gt;</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>The background colour is CCCCFF</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<p>If you want to change the colour of just one row or cell, you type <em>bgcolor="CCCCFF"</em> inside the start td or tr tag, like so:</p>
+<p>&lt;tr bgcolor="CCCCFF"&gt;</p>
+<p>&lt;td bgcolor="CCCCFF"&gt;</p>
+<p>The last thing you will need to know about tables is how to change their size. If you don't specify a height or width, the table will try to fit in your text or pictures automatically. This may not look exactly how you want it, however. To set the width of an entire table, you just need to say how many pixels or what percentage of the screen you want it to span. The average webpage is about 600 pixels in width. It is completely up to you what size you set. You just need to type <em>width="your value"</em> when you start your table. For example:</p>
+<p>&lt;table width="600"&gt; or &lt;table width="70%"&gt;</p>
+<p>Then you just type the rest of your table as normal. Height works in the same way as width, it just isn't normally used. To set the height, you just type <em>height="your value"</em>. You can set the height and width at the same time by typing:</p>
+<p>&lt;table width="600" height="400"&gt; or &lt;table width="70%" height="50%"&gt;</p>
+<p><strong>Lesson 8: Adding Music</strong></p>
+<p>There is only one way you can add music. If the user viewing your page is using Internet Explorer, your music can play in the background when the page loads.</p>
+<p>First, you need to have your music file saved somewhere on the Internet. Simply replace the text "<em>Link</em>" with the URL of your music file.</p>
+<p>You can use bgsound src files with the extensions of:</p>
+<ul>
+<li>.mid</li>
+<li>.midi</li>
+<li>.wav</li>
+<li>.mp3</li>
+</ul>
+<p><strong>Creating a player</strong></p>
+<p>&lt;bgsound src="Link"&gt;</p>
+<p>Replace the "Link" part of the code with the URL of your own file on the Internet.</p>
+<p><strong>Extra Ways to make your webpage better</strong><strong>:</strong></p>
+<p><strong>Setting Margins</strong></p>
+<p>Web pages look better with margins. You can set them with the &ldquo;Margin-Left&rdquo; and &ldquo;Margin-Right&rdquo; Codes</p>
+<p>For this you may need to learn css which we won't go over now.</p>
+<p>&lt;style type="text/css"&gt;</p>
+<p>body { margin-left: 10%; margin-right: 10%; }</p>
+<p>&lt;/style&gt;</p>
+<p>This text sets both margins to 10% of the window.</p>
+<p><strong>Colour Blindness</strong></p>
+<p>When using colour, remember that 5 to 10% of men have some form of colour blindness. This can cause difficulties distinguishing between red and green or between yellow and blue. In rare cases, there is an inability to perceive any colors at all. You should avoid foreground/background colour combinations that would make the text hard to read for people with colour blindness.</p>
+<p>The next tip is also about colour.</p>
+<p><strong>Colour Names and sRGB values</strong></p>
+<p>Remember that these aren't the only colours you may use, these are just the most basic colours. Also here are the colour values - Thus, the color value "#800080" is the same as purple.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>black = "#000000"</p>
+</td>
+<td>
+<p>green = "#008000"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>silver = "#C0C0C0"</p>
+</td>
+<td>
+<p>lime = "#00FF00"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>gray = "#808080"</p>
+</td>
+<td>
+<p>olive = "#808000"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>white = "#FFFFFF"</p>
+</td>
+<td>
+<p>yellow = "#FFFF00"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>maroon = "#800000"</p>
+</td>
+<td>
+<p>navy = "#000080"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>red = "#FF0000"</p>
+</td>
+<td>
+<p>blue = "#0000FF"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>purple = "#800080"</p>
+</td>
+<td>
+<p>teal = "#008080"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>fuchsia = "#FF00FF"</p>
+</td>
+<td>
+<p>aqua = "#00FFFF"</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Browser Colours</strong></p>
+<p>New computers support thousands or millions of colors, but many older color systems can only show up to 256 colors at a time. To cope with this, these browsers make do with colors from a fixed palette. The effect of this is often visible as a speckling of colors as the browser tries to approximate the true color at any point in the image. This problem will gradually go away as older computers are replaced by newer models.</p>
+<p>Most browsers support the same "browser safe" palette. This uses 6 evenly spaced gradations in red, green and blue and their combinations. If you select image colors from this palette, you can avoid the speckling effect. This is particularly useful for background areas of images.</p>
+<p>If the browser is using the browser safe palette, the page background uses the nearest color in the palette. If you set the page background to a color which isn't in the browser safe palette, you run the risk that the background will have different colors depending on whether the computer is using indexed or true-color.</p>
+<p><strong>Inspire </strong><strong><em>dont</em></strong><strong> Copy</strong></p>
+<p>A good way to learn is to look at how other people have coded their html pages. To do this, click on the "View" menu and then on "Source". On some browsers, you instead need to click on the "File" menu and then on "View Source". Remember never copy source code.</p>
+</div>
